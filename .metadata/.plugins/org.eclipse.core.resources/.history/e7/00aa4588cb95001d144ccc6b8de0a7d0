@@ -1,0 +1,46 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Person;
+
+public class Program {
+
+	private static double mediaAltura;
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Quantas pessoas serão digitadas? ");
+		int n = sc.nextInt();
+		String name;
+		int idade;
+		double altura;
+		mediaAltura = 0;
+		
+		
+		Person[] arr = new Person[n];
+		
+		for (int i = 0; i < n; i++) {
+			System.out.println("Dados da " + arr[i]+ "a pessoa:" );
+			System.out.print("Nome: ");
+			name = sc.next();
+			System.out.print("Idade: ");
+			idade = sc.nextInt();
+			System.out.print("Altura: ");
+			altura = sc.nextDouble();
+			
+			Person person = new Person(name, idade, altura);
+		}
+		
+		for (int i =0; i < arr.length; i++) {
+			System.out.println(arr[i].getAltura());
+		}
+ 		 
+		
+		sc.close();
+	}
+
+}

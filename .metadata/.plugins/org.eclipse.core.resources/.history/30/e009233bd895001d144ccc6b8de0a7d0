@@ -1,0 +1,11 @@
+package application;
+
+public class Program {
+
+	public static void main(String[] args) {
+		//Arr 0 a 9
+		String[] arr = new String[9]; 
+
+	}
+
+}

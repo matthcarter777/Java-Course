@@ -1,0 +1,18 @@
+package entrada_dados;
+
+import java.util.Scanner;
+import java.lang.Math. *;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int i = 0;
+		
+		while (i < 6 ) {
+			System.out.println(i);
+			i++;
+		}
+	}
+
+}
