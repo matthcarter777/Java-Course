@@ -1,6 +1,5 @@
 package application;
 
-import java.lang.runtime.ObjectMethods;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -69,7 +68,8 @@ public class Program {
 			System.out.println(e.getInformations());
 		}
 		
-
+		
+		sc.close();
 	}
 
 }
