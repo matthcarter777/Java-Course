@@ -51,7 +51,7 @@ public class Program {
 			System.out.print("Product price: ");
 			double priceItem = sc.nextDouble();
 			
-			Product product = new Product(name, priceItem);
+			Product product = new Product(nameItem, priceItem);
 			
 			System.out.print("Quantity: ");
 			int quantityItem = sc.nextInt();
