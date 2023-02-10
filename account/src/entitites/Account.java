@@ -1,9 +1,9 @@
 package entitites;
 
 public class Account {
-	private Integer number;
-	private String holder;
-	private Double balance;
+	protected Integer number;
+	protected String holder;
+	protected Double balance;
 	
 	public Account() {
 		
