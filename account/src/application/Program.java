@@ -36,6 +36,19 @@ public class Program {
 		Account acc7 = new BussinesAccount(1007, "Cratos", 1000.0, 100.00);
 		acc7.withdraw(200.00);
 		System.out.println(acc7.getBalance());
+		
+		//Polimorfismo 
+		
+		Account acc8 = new Account(1010, "Lucio", 1000.0);
+		Account acc9 = new SavingAccount(1011, "Xandão", 1000.0, 100.00);
+		
+		System.out.println("Polimorfismo");
+		
+		acc8.withdraw(50.00);
+		System.out.println(acc8.getBalance());
+		
+		acc9.withdraw(50.00);
+		System.out.println(acc9.getBalance());
 	}
 
 }
