@@ -1,0 +1,13 @@
+package entitites;
+
+import java.util.Date;
+
+import entitites.enums.OrderStatus;
+
+public class Order {
+	private Date moment;
+	private OrderStatus status;
+	
+	
+
+}

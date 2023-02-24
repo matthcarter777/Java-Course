@@ -1,0 +1,25 @@
+package entitites;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class OrderItem {
+	private Integer quantity;
+	private Double price;
+	
+	List<Product> products = new ArrayList<>();
+	
+	public OrderItem() {}
+	
+	public OrderItem(Integer quantity, Double price) {
+		super();
+		this.quantity = quantity;
+		this.price = price;
+	}
+	
+	public Double subTotal() {
+		return 10.00;
+	}
+	
+	
+}

@@ -1,0 +1,16 @@
+package entitites;
+
+public class OrderItem {
+	private Integer quantity;
+	private Double price;
+	
+	public OrderItem() {}
+	
+	public OrderItem(Integer quantity, Double price) {
+		super();
+		this.quantity = quantity;
+		this.price = price;
+	}
+	
+	
+}
