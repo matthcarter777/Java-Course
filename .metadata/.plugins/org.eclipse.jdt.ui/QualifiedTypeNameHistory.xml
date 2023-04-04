@@ -13,4 +13,6 @@
     <fullyQualifiedTypeName name="entitites.Product"/>
     <fullyQualifiedTypeName name="entitites.OrderItem"/>
     <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="model.exceptions.DomainException"/>
+    <fullyQualifiedTypeName name="model.entities.Account"/>
 </qualifiedTypeNameHistroy>
