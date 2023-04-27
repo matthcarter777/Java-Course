@@ -2,6 +2,7 @@ package application;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -39,7 +40,7 @@ public class Program {
 			}
 			
 			String pathOutput = "c:\\report\\out\\summary.csv";
-			
+						
 			BufferedWriter bw = new BufferedWriter(new FileWriter(pathOutput, true));
 			
 			for (String data : output) {
