@@ -1,15 +1,16 @@
 package model.entities;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Contract {
 	private int number;
-	private LocalDateTime date;
+	private Date date;
 	private Double totalValue;
 	
 	public Contract() {}
 	
-	public Contract(int number, LocalDateTime date, Double totalValue) {
+	public Contract(int number, Date date, Double totalValue) {
 		super();
 		this.number = number;
 		this.date = date;
@@ -24,11 +25,11 @@ public class Contract {
 		this.number = number;
 	}
 
-	public LocalDateTime getDate() {
+	public Date getDate() {
 		return date;
 	}
 
-	public void setDate(LocalDateTime date) {
+	public void setDate(Date date) {
 		this.date = date;
 	}
 
