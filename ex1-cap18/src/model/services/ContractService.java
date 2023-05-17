@@ -1,5 +1,8 @@
 package model.services;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+
 import model.entities.Contract;
 
 public class ContractService {
@@ -7,6 +10,8 @@ public class ContractService {
 	private OnlinePaymentService payment;
 	private Double amount;
 	private Contract contract;
+	
+	private static final DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 	
 	
 	public ContractService(Contract Contract, Double amount, OnlinePaymentService payment) {
@@ -17,11 +22,14 @@ public class ContractService {
 
 	public void processContract(Contract contract, int months) {
 		
-		double test = payment.interest(200, months);
+		double tax = 0;
+		double paymentFee = 0;
+		double installment = 0;
 		
-		double test2 = payment.paymentFee(202);
-		
-		System.out.println("Interes: " + test);
-		System.out.println("PaymentFee: " + test2);
+		for (int i = 0; i < months; i ++) {
+			tax = payment.interest((amount / months), i + 1);
+			paymentFee = payment.paymentFee(((amount / months) + tax));
+			installment = ((amount / months) + tax + paymentFee);			
+		}
 	}
 }

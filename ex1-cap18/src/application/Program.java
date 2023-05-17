@@ -2,14 +2,11 @@ package application;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Scanner;
 
 import model.entities.Contract;
 import model.services.ContractService;
-import model.services.OnlinePaymentService;
 import model.services.PaypalService;
 
 public class Program {
