@@ -1,10 +1,9 @@
 package model.services;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
+
 
 import model.entities.Contract;
 import model.entities.Installment;
@@ -13,10 +12,6 @@ public class ContractService {
 	
 	private OnlinePaymentService payment;
 	private Double amount;
-	private Contract contract;
-	
-	private static final DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-	
 	
 	public ContractService(Contract Contract, Double amount, OnlinePaymentService payment) {
 		this.payment = payment;
