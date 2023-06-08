@@ -2,7 +2,7 @@ package entities;
 
 import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable{
 	private int cod;
 	
 	public Student() {}
@@ -35,6 +35,11 @@ public class Student {
 			return false;
 		Student other = (Student) obj;
 		return cod == other.cod;
+	}
+
+	@Override
+	public int compareTo(Student s) {
+		return 
 	}
 
 }
