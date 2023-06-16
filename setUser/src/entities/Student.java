@@ -39,7 +39,7 @@ public class Student implements Comparable{
 
 	@Override
 	public int compareTo(Student s) {
-		return 
+		return s.getCod() == this.getCod();
 	}
 
 }
