@@ -21,7 +21,7 @@ public class Program {
 
 		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 			
-			List<Producto> list = new ArrayList<>();
+			List<Product> list = new ArrayList<>();
 			
 			while (sc.hasNextLine()) {
 				System.out.println(sc.nextLine());
